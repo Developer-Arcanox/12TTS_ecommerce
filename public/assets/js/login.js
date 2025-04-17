@@ -13,4 +13,11 @@ document.addEventListener("DOMContentLoaded", function () {
                 ? '<i class="far fa-eye"></i>'
                 : '<i class="far fa-eye-slash"></i>';
     });
+
+    let loginSubmitBtn = document.getElementById("loginSubmitBtn");
+    let loginForm = document.getElementById("loginForm");
+
+    loginSubmitBtn.addEventListener("click", function () {
+        loginForm.submit();
+    });
 });
